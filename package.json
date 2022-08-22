@@ -1,0 +1,20 @@
+{
+  "name": "gql-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^3.10.1",
+    "graphql": "^16.6.0",
+    "graphql-tools": "^8.3.3",
+    "mongoose": "^6.5.2",
+    "nodemon": "^2.0.19"
+  }
+}
