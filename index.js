@@ -1,5 +1,6 @@
 const { ApolloServer } = require("apollo-server");
 const mongoose = require("mongoose");
+const dotenv = require("dotenv");
 const { mergeTypeDefs, mergeResolvers } = require("@graphql-tools/merge");
 
 const playerTypeDefs = require("./graphql/TypeDefs/playerTypeDefs");
@@ -9,8 +10,9 @@ const teamResolvers = require("./graphql/Resolvers/teamResolvers");
 const PostionalCapTypeDefs = require("./graphql/TypeDefs/postionalcapTypeDefs");
 const PositionalCapResolvers = require("./graphql/Resolvers/postionalcapResolvers");
 
-const MONGODB =
-  "mongodb+srv://brandon:iwaWKnmsmV7kaxOk@cluster0.cdw9z.mongodb.net/?retryWrites=true&w=majority";
+dotenv.config();
+
+const MONGODB = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.cdw9z.mongodb.net/?retryWrites=true&w=majority`;
 
 // Apollo Server
 // TypeDefs: Type Definitions
