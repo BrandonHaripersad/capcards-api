@@ -7,9 +7,12 @@ module.exports = gql`
     yearsRemaining: String
     clauses: String
     status: String
+    injury: String
     age: Int
     capPercentage: Float
     capHit: Float
+    link: String
+    transactionLink: String
   }
 
   input PlayerInput {
@@ -18,9 +21,12 @@ module.exports = gql`
     yearsRemaining: String
     clauses: String
     status: String
+    injury: String
     age: Int
     capPercentage: Float
     capHit: Float
+    link: String
+    transactionLink: String
   }
 
   type Query {

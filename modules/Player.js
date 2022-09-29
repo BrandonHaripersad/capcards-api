@@ -6,9 +6,12 @@ const playerSchema = new Schema({
   yearsRemaining: String,
   clauses: String,
   status: String,
+  injury: String,
   age: Number,
   capPercentage: Number,
   capHit: Number,
+  link: String,
+  transactionLink: String,
 });
 
 module.exports = model("Player", playerSchema);

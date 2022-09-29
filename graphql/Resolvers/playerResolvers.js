@@ -19,9 +19,12 @@ module.exports = {
           yearsRemaining,
           clauses,
           status,
+          injury,
           age,
           capPercentage,
           capHit,
+          link,
+          transactionLink,
         },
       }
     ) {
@@ -31,9 +34,12 @@ module.exports = {
         yearsRemaining: yearsRemaining,
         clauses: clauses,
         status: status,
+        injury: injury,
         age: age,
         capPercentage: capPercentage,
         capHit: capHit,
+        link: link,
+        transactionLink: transactionLink,
       });
 
       const res = await createdPlayer.save();
@@ -59,9 +65,12 @@ module.exports = {
           yearsRemaining,
           clauses,
           status,
+          injury,
           age,
           capPercentage,
           capHit,
+          link,
+          transactionLink,
         },
       }
     ) {
@@ -74,9 +83,12 @@ module.exports = {
             yearsRemaining: yearsRemaining,
             clauses: clauses,
             status: status,
+            injury: injury,
             age: age,
             capPercentage: capPercentage,
             capHit: capHit,
+            link: link,
+            transactionLink: transactionLink,
           }
         )
       ).modifiedCount;
